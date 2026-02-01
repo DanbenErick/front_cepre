@@ -1,0 +1,110 @@
+/* =========================================
+   Card Component - Platzi Style
+   ========================================= */
+
+.card-widget {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  transition: all var(--transition-base);
+}
+
+.card-widget:hover {
+  border-color: var(--border-light);
+  box-shadow: var(--shadow-md);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.card-title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.card-action {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.card-content {
+  color: var(--text-secondary);
+}
+
+/* Stat Card Variant */
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  cursor: pointer;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stat-icon.bg-green {
+  background: rgba(72, 187, 120, 0.15);
+  color: #48BB78;
+}
+
+.stat-icon.bg-blue {
+  background: rgba(66, 153, 225, 0.15);
+  color: #4299E1;
+}
+
+.stat-icon.bg-purple {
+  background: rgba(159, 122, 234, 0.15);
+  color: #9F7AEA;
+}
+
+.stat-icon.bg-orange {
+  background: rgba(237, 137, 54, 0.15);
+  color: #ED8936;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stat-label {
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.stat-value {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* Glass panel override for dark theme */
+.glass-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+}

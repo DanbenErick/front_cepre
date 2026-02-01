@@ -1,0 +1,211 @@
+/* Utility classes for tables - mimicing the inline styles used above */
+.text-green-600 {
+  color: #16a34a;
+}
+
+.bg-green-50 {
+  background-color: #f0fdf4;
+}
+
+.text-orange-600 {
+  color: #ea580c;
+}
+
+.bg-orange-50 {
+  background-color: #fff7ed;
+}
+
+.text-red-600 {
+  color: #dc2626;
+}
+
+.bg-red-50 {
+  background-color: #fef2f2;
+}
+
+.space-y-6>*+* {
+  margin-top: 1.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.border-collapse {
+  border-collapse: collapse;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-slate-200 {
+  border-color: #e2e8f0;
+}
+
+.border-slate-100 {
+  border-color: #f1f5f9;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-slate-800 {
+  color: #1e293b;
+}
+
+.text-slate-600 {
+  color: #475569;
+}
+
+.text-slate-500 {
+  color: #64748b;
+}
+
+.hover\:bg-slate-50:hover {
+  background-color: #f8fafc;
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+/* Grid Utilities */
+.grid { display: grid; }
+.grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.gap-6 { gap: 1.5rem; }
+
+@media (min-width: 768px) {
+  .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* Other utilities */
+.hover\:shadow-lg:hover { box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); }
+.transition-all { transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
+.items-start { align-items: flex-start; }
+.w-16 { width: 4rem; }
+.h-20 { height: 5rem; }
+.bg-slate-200 { background-color: #e2e8f0; }
+.text-slate-400 { color: #94a3b8; }
+.flex-shrink-0 { flex-shrink: 0; }
+.text-xs { font-size: 0.75rem; line-height: 1rem; }
+.text-accent { color: var(--accent); }
+.uppercase { text-transform: uppercase; }
+.tracking-wider { letter-spacing: 0.05em; }
+.mt-1 { margin-top: 0.25rem; }
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 0.75rem; }
+.text-yellow-500 { color: #eab308; }
+.h-8 { height: 2rem; }
+.justify-center { justify-content: center; }
+
+/* Practices utilities */
+.border-l-4 { border-left-width: 4px; }
+.border-l-accent { border-left-color: var(--accent); }
+.bg-purple-50 { background-color: #f3e8ff; }
+.text-purple-600 { color: #9333ea; }
+.rounded-lg { border-radius: 0.5rem; }
+.bg-slate-100 { background-color: #f1f5f9; }
+.mx-1 { margin-left: 0.25rem; margin-right: 0.25rem; }
+.h-9 { height: 2.25rem; }
+
+/* Teachers utilities */
+.text-center { text-align: center; }
+.flex-col { flex-direction: column; }
+.text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+.text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+.bg-blue-600 { background-color: #2563eb; }
+.bg-pink-600 { background-color: #db2777; }
+.bg-indigo-600 { background-color: #4f46e5; }
+.bg-teal-600 { background-color: #0d9488; }
+.bg-orange-600 { background-color: #ea580c; }
+.bg-green-600 { background-color: #16a34a; }
+.space-y-3 > * + * { margin-top: 0.75rem; }
+.mt-auto { margin-top: auto; }
+
+/* Text truncation */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
